@@ -1,0 +1,25 @@
+{
+	"name": "alainschlesser/broken-settings-v2",
+	"description": "Example Code: Settings Page - Broken Implementation v2",
+	"type": "wordpress-plugin",
+	"homepage": "https://www.alainschlesser.com/config-files-for-reusable-code/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Alain Schlesser",
+			"homepage": "https://www.alainschlesser.com/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://www.github.com/alainschlesser/broken-settings-v2/issues"
+	},
+	"autoload": {
+		"psr-4": {
+			"AlainSchlesser\\BrokenSettings2\\": "src/"
+		}
+	},
+	"require": {
+		"composer/installers": "^1.0"
+	}
+}
