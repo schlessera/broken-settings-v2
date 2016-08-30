@@ -53,8 +53,13 @@ class View {
 			return '';
 		}
 
+		// We use output buffering to capture the output of the PHP view.
 		ob_start();
+
+		// We extract the `$context` variable so that its individual elements
+		// are available as variables within the view's namespace.
 		extract( $context );
+
 		include $this->filename;
 		return ob_get_clean();
 	}

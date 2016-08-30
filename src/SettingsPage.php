@@ -108,6 +108,10 @@ class SettingsPage {
 	public function options_page() {
 		$elements = [];
 
+		// As the following WordPress functions default to printing their
+		// results instead of returning them, we need to use output buffering to
+		// capture their output to be able to forward it to our views.
+
 		ob_start();
 		settings_fields( 'pluginPage' );
 		$elements['fields'] = ob_get_clean();
